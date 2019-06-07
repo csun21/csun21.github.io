@@ -1,8 +1,214 @@
-<!DOCTYPE html>
-<html>
+
+<title>Résumé Portfolio</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+body {
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: #3AA6FB;
+  font-family: Playfair-s;
+  margin-right: 25%;
+}
+
+
+.title{
+  font-size: 12vw;
+  font-family: 'Playfair Display', serif;
+  padding: 15%;
+  float: left;
+  
+}
+.header{
+  font-family: 'Playfair Display', serif;
+  text-decoration: underline;
+  font-size: 5vw;
+  position: relative;
+  left: 10%;
+}
+.image{
+  border-radius: 50%;
+  float: left;
+  left: 10%;
+  margin: 5%;
+}
+.body {
+  font-family: 'Playflair Display', serif;
+  font-size: 2vw;
+  position: relative;
+  left: 10%;
+}
+@media screen and (max-width: 800px) {
+ 
+  .image {
+    display: none;
+  }
+  * {box-sizing: border-box;}
+  .wrapper {
+  max-width: 100%;
+  margin: 100;
+  position: relative;
+  left: 17%;
+  }
+
+  .wrapper > div {
+  border: 2px solid #0061ff;
+  border-radius: 5px;
+  background-color: #a8c9ff;
+  padding: 1em;
+  color: #a8c9ff;
+  }.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  }
+  .two { 
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  }
+  .three {
+  grid-column: 1;
+  grid-row: 3 / 4;
+  }
+  .four {
+  grid-column: 1;
+  grid-row: 4 / 5;
+  }
+  
+}
+.contact {
+  top: 80%;
+  left: 10%;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin: 5%;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 1;
+  overflow: hidden;
+  background-color: #;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  left: 14%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #d3d3d3;
+}
+
+.active {
+  background-color: #1b70f9;
+}
+* {box-sizing: border-box;}
+.wrapper {
+  max-width: 100%;
+  margin: 100;
+  position: relative;
+  left: 17%;
+}
+
+.wrapper > div {
+  border: 2px solid #0061ff;
+  border-radius: 5px;
+  background-color: #a8c9ff;
+  padding: 1em;
+  color: #a8c9ff;
+}.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 3;
+}
+.four {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.work {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  position: relative;
+  left: 17%
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+a:hover {
+  animation-name: animation;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;  
+}
+@keyframes animation
+{
+  0% {font-size: 20px;}
+  20% {font-size: 22px;}
+  40% {font-size: 24px;}
+  60% {font-size: 26px;}
+  80% {font-size: 28px;}
+  100% {font-size: 30px;}
+}
+</style>
+ <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Playfair+Display:400,700" rel="stylesheet">
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<b><div class="title">Portfolio</div>
+<ul>
+  <li><a class="active" href="https://codepen.io/csun21/">Codepen</a></li>
+  <li><a href="https://www.instagram.com/csun21_/">Instagram</a></li>
+  <li><a href="mailto:calebsunsd@gmail.com">Contact</a></li>
+  <li><a href="#work">Work Examples</a></li>
+</ul>
+<p class="contact">Contact me at calebsunsd@gmail.com</p><img src="https://i.ibb.co/bNn5G6X/image.png" width=40%; class="image">
+   
+<p class="header">About Me</p>
+<p class="body">My name is Caleb Sun and I go to Westview High School. Computer science classes I have taken are Web Design 1-2. My father is a web developer, so I am quite familiar with HTML, CSS, and some basic computer science. Through Web Design, I've learned how to use HTML, CSS, JS, and Bootstrap. Aside from coding languages, I also speak Madarin Chinese fluently. Through my years of school, I have always gotten good grades. This year my GPA was 4.1. I am currently part of the Advocatesd for a Better Environment Club. I often do community service and volunteer as I am a part of Boy Scouts. Within my Boy Scout troop, I am a patrol leader, which has taught me important leadership skills and independence. Outside of school, I have also been playing violin for 5 years. I plan to be a chef when I grow up. I find the job to be very interesting and fun. Cooking is also a very important skill to know. I will probably go to a culinary school where I will learn culinary arts for 2-4 years.</p>
+  <br><br><br><br><br><br>
+  <a name="work"><p class="work">Portfolio of Work</p></a>
+  <div class="wrapper">
+    <div class="one"><a href="https://codepen.io/csun21/pen/yWbjPP">An example of my work with CSS Grid.</a></div>
+  <div class="two"><a href="https://codepen.io/csun21/pen/jRNqNz">A page I made for a school project</a></div>
+    <div class="three"><a href="https://codepen.io/csun21/pen/KYzWrE">Another school project</a></div>
+    <div class="four"><a href="https://codepen.io/csun21/pen/pBJXqG">A test of css animations</a></div>
+</div>
+  </div>
+
 </body>
-</html>
-    
